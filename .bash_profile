@@ -10,3 +10,4 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
+XARGS_OPTS=&>/dev/null xargs -r && XARGS_OPTS+="-r"
